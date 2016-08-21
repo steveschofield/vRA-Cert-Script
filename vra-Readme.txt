@@ -2,8 +2,8 @@ To use Scripts, some pre-reqs need to be verified, met
 
 1) Download OpenSSL from repo or download an OpenSSL windows version on the web
 	a) Scripts use C:\OpenSSL as default path
-	https://github.com/steveschofield/vracert-script
-
+	https://github.com/steveschofield/vRA-cert-script
+	
 2) Update XML files data meet your environment
 3) Verify PowerShell execution is at least RemoteSigned on machine running scripts
 4) Verify account running scripts has permissions on template defined
