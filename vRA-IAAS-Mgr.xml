@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+#Assumptions
+#1 - A working internal certificate authority is setup
+#2 - A template is setup to provide Client and Server authentication
+#3 - OpenSSL has been downloaded and placed in C:\OpenSSL
+#4 - The account running commands below have appropriate rights on the template
+#5 - Each OpenSSL configuration has been configured with appropriate DNS names
+-->
+<Configuration>
+	<Properties>
+		<certPath>C:\OpenSSL\Certs\vRACerts\vRA-Iaas-Mgr</certPath>
+		<subjAltName>DNS: vraIaas, DNS: vraIaas.ss.local, DNS: vraIaas1.ss.local, DNS: vraIaas1, IP:192.168.1.120, DNS: vraIaas2.ss.local, DNS: vraIaas2, IP:192.168.1.121, DNS: vraMgr, DNS: vraMgr.ss.local, DNS: vraMgr1.ss.local, DNS: vraMgr1, IP:192.168.1.120, DNS: vraMgr2.ss.local, DNS: vraMgr2, IP:192.168.1.122</subjAltName>
+		<commonName>vraIaas.ss.local</commonName>
+		
+		<!--#OpenSSL config settings-->
+		<openSSLCFGfileName>openssl.cfg</openSSLCFGfileName>
+		<countryName>US</countryName>
+		<stateOrProvinceName>MI</stateOrProvinceName>
+		<localityName>CityName</localityName>
+		<organizationName>Pondering</organizationName>
+		<organizationalUnitName>Geek</organizationalUnitName>
+		
+		<!--#General variables-->
+		<CertificateTemplateName>Copy of Web Server</CertificateTemplateName>
+		<CertificateKeyLength>2048</CertificateKeyLength>
+		<RootCA>dc1.ss.local\ss-DC1-CA</RootCA>
+		<OpenSSLPath>C:\OpenSSL\bin\openssl</OpenSSLPath>
+		<OpenSSLRootDir>C:\OpenSSL</OpenSSLRootDir>
+		<CertPassword>1234</CertPassword>
+	</Properties>
+</Configuration>
