@@ -1,3 +1,5 @@
+LICENSE - Free to use as you see fit.  BSD was my favorite license and OS back in the day.  
+
 To use Scripts, some pre-reqs need to be verified, met
 
 1) Download OpenSSL from repo or download an OpenSSL windows version on the web
