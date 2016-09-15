@@ -1,1 +1,0 @@
-# vracert-script
