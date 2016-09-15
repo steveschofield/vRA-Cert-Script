@@ -1,4 +1,4 @@
-LICENSE - Free to use as you see fit.  BSD was my favorite license and OS back in the day.  
+LICENSE - Free to use as you see fit.  BSD was my favorite license and OS back in the day.  I guess it's called Apache BSD.  No strings.. 
 
 To use Scripts, some pre-reqs need to be verified, met
 
